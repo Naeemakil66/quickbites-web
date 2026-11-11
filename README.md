@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 🍔 QuickBites - Online Restaurant Ordering System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**QuickBites** is a fully responsive, multi-page frontend web application built using **ReactJS**. It allows users to browse menu categories, search for dishes, view detailed item pages, manage an interactive shopping cart in real time, and simulate a complete checkout and authentication workflow—all managed client-side without external backend dependencies.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Features
 
-### `npm start`
+- **Dynamic Navigation & Routing:** Seamless multi-page routing using `react-router-dom` across 5+ core views (Home, Menu, Item Details, Checkout/Cart, About & Contact, Login/Signup).
+- **Interactive Menu & Real-Time Search:** Search dishes by keyword and filter by categories (Burgers, Pizza, Drinks, Desserts).
+- **Dynamic Item Detail Page (`/menu/:id`):** View individual item details, customer ratings, price updates, and quantity controls.
+- **Global Shopping Cart (`useContext`):** Add/remove items and adjust quantities with automated real-time total price and badge count calculations.
+- **Client-Side Authentication:** Frontend login and signup modal/form system with persistent user state via `localStorage`.
+- **Responsive Web Design:** Mobile-first, adaptive layouts styled purely using a single centralized CSS file (`App.css`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack & React Hooks Used
 
-### `npm test`
+- **Framework:** ReactJS (Functional Components, ES6 JavaScript)
+- **Routing:** `react-router-dom` (v6+)
+- **State Management & Hooks:**
+  - `useState`: Handles local form inputs, active category filters, search terms, and quantity counters.
+  - `useEffect`: Manages local data persistence for cart items and authenticated user sessions.
+  - `useContext`: Global `CartContext` to share cart state and auth session across all components without prop-drilling.
+- **Styling:** Custom CSS (`App.css`) with CSS Flexbox & Grid.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+client/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   └── Footer.js
+│   ├── context/
+│   │   └── CartContext.js
+│   ├── data/
+│   │   └── menuData.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Menu.js
+│   │   ├── ItemDetail.js
+│   │   ├── Checkout.js
+│   │   ├── AboutContact.js
+│   │   └── Login.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/quickbites-web/static/css/main.cec466dd.css",
-    "main.js": "/quickbites-web/static/js/main.219c38b7.js",
-    "index.html": "/quickbites-web/index.html",
-    "main.cec466dd.css.map": "/quickbites-web/static/css/main.cec466dd.css.map",
-    "main.219c38b7.js.map": "/quickbites-web/static/js/main.219c38b7.js.map"
+    "main.css": "/deploy-react-gh-pages/static/css/main.70ae5395.css",
+    "main.js": "/deploy-react-gh-pages/static/js/main.0b7f75a4.js",
+    "index.html": "/deploy-react-gh-pages/index.html",
+    "main.70ae5395.css.map": "/deploy-react-gh-pages/static/css/main.70ae5395.css.map",
+    "main.0b7f75a4.js.map": "/deploy-react-gh-pages/static/js/main.0b7f75a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cec466dd.css",
-    "static/js/main.219c38b7.js"
+    "static/css/main.70ae5395.css",
+    "static/js/main.0b7f75a4.js"
   ]
 }
